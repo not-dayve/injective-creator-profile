@@ -1,0 +1,125 @@
+.identity-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.identity-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.display-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.role-tag {
+  padding: 6px 14px;
+  background: rgba(158, 127, 255, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.linked-wallets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wallets-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+
+.wallets-toggle:hover {
+  border-color: var(--primary);
+}
+
+.wallets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.wallet-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+}
+
+.wallet-chain {
+  padding: 4px 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 80px;
+  text-align: center;
+}
+
+.wallet-address {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.active-since {
+  padding: 16px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.active-since strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .identity-card {
+    padding: 24px;
+  }
+
+  .display-name {
+    font-size: 24px;
+  }
+
+  .wallet-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

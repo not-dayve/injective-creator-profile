@@ -1,0 +1,42 @@
+.wallet-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wallet-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.wallet-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.wallet-button:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: rgba(158, 127, 255, 0.1);
+}
+
+.wallet-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.connecting-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
